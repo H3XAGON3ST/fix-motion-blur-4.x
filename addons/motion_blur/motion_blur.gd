@@ -4,7 +4,7 @@ var cam_pos_prev = Vector3.ZERO
 
 @onready var cam_rot_prev = Quaternion(global_transform.basis)
 @onready var mat = self.get_material_override()
-@onready var cam : Camera3D = get_parent().get_parent()
+@onready var cam : Camera3D = get_parent()
 
 func _ready():
 	assert(cam is Camera3D)
